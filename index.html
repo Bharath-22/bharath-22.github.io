@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bharath G — Site Reliability Engineer</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -877,9 +878,9 @@
     <h2 class="section-title">Get In Touch</h2>
     <p class="section-desc">Interested in working together or have a question? I'd love to hear from you.</p>
     <div class="contact-links">
-      <a href="/cdn-cgi/l/email-protection#81e6e3e9e0f3e0f5e9b5b8b5c1e6ece0e8edafe2eeec" class="contact-card">
+      <a href="mailto:gbharath494@gmail.com" class="contact-card">
         <span class="icon">✉️</span>
-        <span class="__cf_email__" data-cfemail="86e1e4eee7f4e7f2eeb2bfb2c6e1ebe7efeaa8e5e9eb">[email&#160;protected]</span>
+        gbharath494@gmail.com
       </a>
       <a href="tel:+919740250915" class="contact-card">
         <span class="icon">📱</span>
@@ -897,7 +898,7 @@
   <p>Designed & built by Bharath G · Bengaluru, India · 2026</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Nav scroll effect
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
@@ -918,4 +919,13 @@
 
   // Smooth scroll for nav links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.add
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+
+</body>
+</html>
